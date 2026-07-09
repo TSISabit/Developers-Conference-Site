@@ -65,8 +65,40 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
-.common-btn:hover{
-    background: #1d4ed8;
+.common-btn:hover {
+  background: #1d4ed8;
+}
+
+.hero {
+  height: calc(100vh - 72px);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("./assets/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 136px;
+}
+
+.hero-content {
+  max-width: 760px;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  margin-bottom: 24px;
+}
+
+.hero-content p {
+  margin-bottom: 250px;
+}
+
+.hero-content .common-btn {
+  display: inline-flex;
 }
