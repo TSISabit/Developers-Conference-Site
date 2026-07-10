@@ -129,7 +129,6 @@ body {
   background: #fff;
   border: 1px solid #e5e7eb;
   border-radius: 18px;
-  overflow: hidden;
   transition: 0.3s;
 }
 
@@ -195,8 +194,12 @@ body {
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   background: white;
+  transition: 0.3s;
 }
 
+.pricing-card:hover {
+  transform: translateY(-8px);
+}
 .featured {
   background: #0f1c2e;
   color: white;
@@ -292,4 +295,152 @@ body {
 
 .comparison-table tbody tr:hover {
   background: #eef4ff;
+}
+
+/* Newsletter */
+.newsletter {
+  max-width: 900px;
+  margin: 120px auto;
+  padding: 60px;
+  text-align: center;
+  background: #0f1c2e;
+  color: white;
+  border-radius: 16px;
+}
+
+.newsletter h2 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.newsletter p {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  padding: 16px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+
+
+/* Statistics */
+.statistics{
+    max-width: 1200px;
+    margin: 120px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.statistics-container{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.stat-card{
+    padding: 40px;
+    border-radius: 15px;
+    background: #ebedee;
+    transition: .3s;
+}
+
+.stat-card:hover{
+    transform: translateY(-8px);
+}
+
+.stat-card h3{
+    font-size: 48px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.stat-card p{
+    color: #64748B;
+    font-weight: 500;
+}
+
+
+
+/* Swag */
+.swag{
+    max-width: 1200px;
+    margin: 120px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.swag-container{
+
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.swag-item{
+
+    padding: 45px;
+    border: 1px solid #E2E8F0;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.swag-item:hover{
+    background: #2563EB;
+    color: white;
+}
+
+.swag-item i{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.swag-item h3{
+    font-size: 24px;
+}
+
+
+/* tech-stack */
+.tech-stack{
+    max-width: 1200px;
+    margin: 120px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.tech-container{
+
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tech-container span{
+    padding: 14px 28px;
+    border-radius: 30px;
+    background: #2563EB;
+    color: white;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.tech-container span:hover{
+    background: #111827;
+    transform: scale(1.05);
 }
